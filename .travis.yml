@@ -17,5 +17,6 @@ deploy:
   github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   keep_history: true
   local_dir: build
+  github_url: https://github.com/songx198/veille-projet/tree/master
   on:
     branch: master
