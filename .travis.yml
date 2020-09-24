@@ -5,10 +5,15 @@ cache: npm
 install:
  npm install
 
+os: window
+
+script:
+ npm run build
+
 deploy:
   provider: pages
-  skip-cleanup: true
-  api_key: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
   on:
     branch: master
