@@ -3,7 +3,7 @@ node_js: 12.18.3
 cache: npm
 
 install:
- npm ci
+ npm install
 
 script:
  npm test
@@ -11,9 +11,9 @@ script:
 
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
   local_dir: build
   on:
     branch: master
