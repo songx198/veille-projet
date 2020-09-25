@@ -5,8 +5,6 @@ cache: npm
 install:
  npm install
 
-os: window
-
 script:
  npm run build
 
