@@ -1,12 +1,9 @@
 language: node_js
 node_js: 12.18.3
+cache: npm
 
 install:
  npm install
-
- cache:
-  directories:
-  - node_modules
 
 script:
  npm test
