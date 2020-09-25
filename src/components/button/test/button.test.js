@@ -10,3 +10,7 @@ it("renders without crashing", () => {
     ReactDom.render(<Button></Button>, div)
 })
 
+it("renders button correctly", () => {
+    const { getByTestId } = render(<Button label="Click"></Button>)
+    expect(getByTestId('button')).toHaveTextContent("Click")
+})
