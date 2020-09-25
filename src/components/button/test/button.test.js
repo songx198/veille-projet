@@ -9,17 +9,17 @@ import render2 from "react-test-renderer";
 
 afterEach(cleanup);
 
-it("renders without crashing", () => {
+it("test button", () => {
     const div = document.createElement("div");
     ReactDom.render(<Button></Button>, div)
 })
 
-it("renders button correctly", () => {
+it("test label du button", () => {
     const { getByTestId } = render(<Button label="Click"></Button>)
     expect(getByTestId('button')).toHaveTextContent("Click")
 })
 
-it("matches snapshot", () => {
+it("test snapshot", () => {
     const tree = render2.create(<Button label="save"></Button>).toJSON();
     expect(tree).toMatchSnapshot();
 })
