@@ -1,0 +1,5 @@
+Demo test react:
+
+1 - créer un nouveau dosier dans le dosier components du projet et le nommés "test" (clique droite sur le src/components et clique sur nouveau dosier)
+2 - créer un fichier dans le dosier "test" (clique droite sur le dosier "test" et clique sur le nouveau fichier) 
+	et le nommés avec le nom du test que vous voule tester, et à la fin ajouter "nom".test.js (exemple : je veux tester mon button, donc je lui nomme button.test.js)
