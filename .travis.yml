@@ -10,7 +10,7 @@ script:
  - npm run build
 
 notification:
-  email: songx1998gmail.com
+  email: songx1998@gmail.com
 
 deploy:
   provider: pages
